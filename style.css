@@ -1,0 +1,155 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    background: rgb(9, 9, 9);
+}
+
+h3 {
+    color: #D4F6CC;
+    font-size: 300%;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-size: 70px;
+    column-gap: 10px;
+    color: #EF5B0C;
+    top: 30%;
+}
+
+
+#greyscale {
+    transform: translate(150%, 0%);
+    animation: greyscale 1s linear infinite;
+}
+
+@keyframes greyscale {
+    to {
+        filter: grayscale(100%);
+    }
+}
+
+#blur {
+    transform: translate(50%, 200%);
+    animation: blur 1s linear infinite;
+}
+
+@keyframes blur {
+    to {
+        filter: blur(5px);
+    }
+}
+
+#brightness {
+    transform: translate(100%, 0%);
+    animation: bright 2s linear infinite;
+}
+
+@keyframes bright {
+    to {
+        filter:brightness(20%);
+    }
+}
+
+#contrast{
+    transform: translate(-10%, 200%);
+    animation: contrast 2s linear infinite;
+}
+
+@keyframes contrast {
+    to {
+        filter:contrast(20%);
+    }
+}
+
+#dropShadow {
+    transform: translate(50%, 0%);
+    animation: drop 1s linear infinite;
+}
+
+@keyframes drop {
+    to {
+        filter:drop-shadow(10px 5px 9px white);
+    }
+}
+
+#hueRotate {
+    transform: translate(-50%, 200%);
+    animation: hue 1s linear infinite;
+}
+
+@keyframes hue {
+    to {
+        filter:hue-rotate(360deg);
+    }
+}
+
+#invert {
+    transform: translate(0%, 0%);
+    animation: invert 1s linear infinite;
+}
+
+@keyframes invert {
+    to {
+        filter:invert(100%);
+    }
+}
+
+#opacity {
+    transform: translate(-100%, 200%);
+    animation: opacity 1s linear infinite;
+}
+
+@keyframes opacity {
+    to {
+        filter: opacity(10%);
+    }
+}
+
+#saturate {
+    transform: translate(-50%, 0%);
+    animation: saturate 1s linear infinite;
+}
+
+@keyframes saturate {
+    to {
+        filter:saturate(10%);
+    }
+}
+
+#sepia {
+    transform: translate(-160%, 200%);
+    animation: sepia 1s linear infinite;
+}
+
+@keyframes sepia {
+    to {
+        filter:sepia(100%);
+    }
+}
+
+#multipleFilters {
+    transform: translate(-100%, 0%);
+    animation: multiple 1s linear infinite;
+}
+
+@keyframes multiple {
+    to {
+        filter: hue-rotate(360deg) drop-shadow(10px 5px 9px white);
+    }
+}
+
+#multipleFilters2 {
+    transform: translate(-210%, 200%);
+    animation: multiple2 1s linear infinite;
+}
+
+@keyframes multiple2 {
+    to {
+        filter: hue-rotate(180deg) drop-shadow(10px 5px 2px white) opacity(10%);
+    }
+}
