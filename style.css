@@ -6,7 +6,13 @@ body {
 
 h3 {
     color: #D4F6CC;
-    font-size: 300%;
+    font-size: 200%;
+    text-align: center;
+}
+
+h2 {
+    color: #D4F6CC;
+    font-size: 200%;
     text-align: center;
 }
 
@@ -18,7 +24,12 @@ h3 {
     font-size: 70px;
     column-gap: 10px;
     color: #EF5B0C;
-    top: 30%;
+    top: 20%;
+    left: 10%;
+}
+
+h3 {
+  font-size: 10px;
 }
 
 
